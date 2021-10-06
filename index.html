@@ -10,7 +10,18 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id='body'>
+    <nav class="mobile-nav">
+      <div id='closeBtn'>X</div>
+      <ul class="mob-links">
+        <a id='m-features' href="#features">FEATURES</a>
+        <a id='m-pricing' href="#pricing">PRICING</a>
+        <a id='m-contact' href="#contact">CONTACT</a>
+      <div class="seperator"></div>
+      <li class="sign-up-btn">Log In</li>
+      </ul>
+      
+    </nav>
     <section class="navigationbar-container">
       <div class="left-navigation-bar">
         <img
@@ -19,12 +30,17 @@
       </div>
       <div class="right-navigation-bar">
         <ul class="navigation-bar">
-          <li href="#features">FEATURES</li>
-          <li href='#pricing'>PRICING</li>
-          <li href='#contact'>CONTACT</li>
-          <li class="sm-orange-btn">LOGIN</li>
+          <a href="#features">FEATURES</a>
+          <a href='#pricing'>PRICING</a>
+          <a href='#contact'>CONTACT</a>
+          <a class="sm-orange-btn">LOGIN</a>
         </ul>
       </div>
+      <button id="burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </button>
     </section>
 
     <section class="grid">
@@ -95,7 +111,8 @@
       </div>
     </section>
 
-    <section class="mid-cardbox">
+    <section id='pricing'>
+    <div class="mid-cardbox">
       <div class="grid-column">
         <h2>Download the extension</h2>
         <p class="para-center">
@@ -146,8 +163,10 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="faq-section">
+    </div>
+  </section>
+  <section id='contact'>
+    <div class="faq-section">
       <div class="mid-box">
         <div class="grid-column">
           <h2>Frequently Asked Questions</h2>
@@ -157,7 +176,8 @@
           </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <section class="bottom-section">
       <div class="bottom-purple-box">
@@ -194,5 +214,6 @@
       </div>
       
     </section>
+    <script src="./script.js"></script>
   </body>
 </html>

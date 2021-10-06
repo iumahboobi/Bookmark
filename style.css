@@ -7,6 +7,63 @@ body {
   font-size: 18;
   font-family: "Rubik", sans-serif;
 }
+/*Mobile navigation start*/
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px;
+  transition: 0.4s;
+}
+.mobile-nav {
+  position: fixed;
+  background-color: #3a3053;
+  color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+#burger {
+  display: none;
+  cursor: pointer;
+}
+#closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 22px 38px;
+  font-size: 38px;
+}
+.mobile-nav ul {
+  display: grid;
+  text-align: center;
+  list-style: none;
+}
+
+.mobile-nav ul a {
+  text-decoration: none;
+  list-style: none;
+}
+.mobile-nav ul li {
+  padding: 14px 24px;
+}
+.mob-links a {
+  padding: 14px 24px;
+}
+.seperator {
+  width: 160px;
+  height: 1px;
+  background-color: rgb(235, 226, 234);
+}
+
+/*Mobile navigation end*/
 .btn-padding {
   padding: 0 18px 18px 18px;
   border-radius: 4px;
@@ -137,10 +194,20 @@ body {
   justify-content: flex-end;
   list-style: none;
 }
-.navigation-bar li {
+.navigation-bar a {
   padding: 8px 22px;
 }
-.navigation-bar li:hover {
+a {
+  text-decoration: none;
+  color: hsl(229, 8%, 60%);
+}
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  text-decoration-color: none;
+}
+.navigation-bar a:hover {
   cursor: pointer;
   color: hsla(0, 4%, 60%, 0.616);
 }
@@ -355,7 +422,7 @@ body {
 
 @media (max-width: 375px) {
   .navigationbar-container {
-    display: none;
+    margin: 26px auto;
   }
   .grid {
     grid-template-columns: repeat(1, 1fr);
@@ -475,8 +542,10 @@ body {
   }
   .left-nav-contents {
     grid-template-columns: repeat(1, 1fr);
-
     align-items: center;
+  }
+  .left-nav-contents img {
+    margin-left: 12px;
   }
 
   .social-media {
@@ -487,5 +556,21 @@ body {
   }
   .social-media img {
     width: none;
+  }
+  /* Burger Menu*/
+  #burger {
+    display: block;
+    padding: 7px 20px;
+    background-color: transparent;
+    margin: 0;
+    border: 0;
+  }
+
+  .navigation-bar {
+    display: none;
+  }
+  .left-navigation-bar {
+    width: 100%;
+    padding: 15px;
   }
 }
