@@ -18,14 +18,14 @@ const body = document.getElementById("body");
 function toggleMobNav() {
   if (
     !mobNav.style.display ||
-    mobNav.style.display === "none" ||
-    body.style.overflow === "none"
+    mobNav.style.display === "none"
+    //body.style.overflow === "none"
   ) {
     mobNav.style.display = "flex";
-    body.style.overflow = "hidden";
+    //body.style.overflow = "hidden";
   } else {
     mobNav.style.display = "none";
-    body.style.overflow = "";
+    //body.style.overflow = "";
   }
 }
 

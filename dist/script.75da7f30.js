@@ -135,12 +135,11 @@ var mobNav = document.querySelector(".mobile-nav");
 var body = document.getElementById("body");
 
 function toggleMobNav() {
-  if (!mobNav.style.display || mobNav.style.display === "none" || body.style.overflow === "none") {
-    mobNav.style.display = "flex";
-    body.style.overflow = "hidden";
-  } else {
-    mobNav.style.display = "none";
-    body.style.overflow = "";
+  if (!mobNav.style.display || mobNav.style.display === "none" //body.style.overflow === "none"
+  ) {
+      mobNav.style.display = "flex"; //body.style.overflow = "hidden";
+    } else {
+    mobNav.style.display = "none"; //body.style.overflow = "";
   }
 } // Mobile version Navigation
 
@@ -191,7 +190,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59428" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51429" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
