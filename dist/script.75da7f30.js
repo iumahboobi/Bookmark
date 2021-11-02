@@ -139,7 +139,7 @@ function toggleMobNav() {
   ) {
       mobNav.style.display = "flex"; //body.style.overflow = "hidden";
     } else {
-    mobNav.style.display = "none"; //body.style.overflow = "";
+    mobNav.style.display = "none"; //body.style.overflow = "none";
   }
 } // Mobile version Navigation
 
@@ -190,7 +190,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51429" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56538" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

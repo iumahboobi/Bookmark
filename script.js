@@ -9,7 +9,7 @@ function handleClick(e) {
   window.scroll(0, finalPosition);
 }
 
-// Burger Menu button
+// 2. Burger Menu button
 
 const brgBtn = document.getElementById("burger");
 const clsBtn = document.getElementById("closeBtn");
@@ -25,11 +25,11 @@ function toggleMobNav() {
     //body.style.overflow = "hidden";
   } else {
     mobNav.style.display = "none";
-    //body.style.overflow = "";
+    //body.style.overflow = "none";
   }
 }
 
-// Mobile version Navigation
+// 3. Mobile version Navigation
 
 const features = document.getElementById("m-features");
 const pricing = document.getElementById("m-pricing");
@@ -42,7 +42,7 @@ function hideMenu() {
     mobNav.style.display = "flex";
   }
 }
-// Burger Button Functions
+// 4. Burger Button Functions
 brgBtn.addEventListener("click", toggleMobNav);
 clsBtn.addEventListener("click", toggleMobNav);
 features.addEventListener("click", hideMenu);

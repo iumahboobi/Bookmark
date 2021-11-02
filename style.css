@@ -29,6 +29,7 @@ body {
   top: 0;
   left: 0;
   z-index: 9;
+  touch-action: none;
 }
 #burger {
   display: none;
@@ -423,6 +424,9 @@ a:focus {
 @media (max-width: 375px) {
   .navigationbar-container {
     margin: 26px auto;
+  }
+  #body {
+    overflow: none;
   }
   .grid {
     grid-template-columns: repeat(1, 1fr);
